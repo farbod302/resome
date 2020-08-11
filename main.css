@@ -1,0 +1,206 @@
+body {
+    font-family: 'Lalezar', cursive;
+    direction: rtl;
+    margin: 0;
+    text-align: start;
+    font-size: x-large;
+}
+
+.header-img {
+    height: 27rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-img img {
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+    opacity: 80%;
+    z-index: -1;
+}
+
+.main-container {
+    width: 70%;
+    right: 15%;
+    position: relative;
+    top: 6rem;
+    height: 35rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    overflow: hidden;
+    box-shadow: rgb(78, 78, 78) 0 0 6px 2px;
+}
+
+.connect-with-me {
+    background-color: rgb(172, 172, 172);
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.connect-with-me::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(172, 172, 172);
+    width: 40%;
+    height: 120%;
+    right: 80%;
+    transform: rotate(15deg);
+    z-index: 2;
+}
+
+.cwm-content {
+    z-index: 2;
+    position: relative;
+    margin: 2rem;
+}
+
+.fa-font {
+    font-size: 3rem !important;
+}
+
+.cwm-options {
+    direction: ltr;
+}
+
+.fa-font:hover {
+    color: #007bff !important;
+    transition: 0.2s;
+    transform: scale(1.1, 1.1);
+}
+
+.my-photo img {
+    width: 95%;
+    height: 100%;
+    left: -2rem;
+    position: relative;
+}
+
+.skills {
+    transform: translate(10rem);
+    top: 10rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    margin: 5rem;
+    overflow: hidden;
+}
+
+.skills-list {
+    padding: 2rem;
+    margin: 5rem 1rem;
+    box-shadow: 0 0 4px 4px rgb(211, 211, 211);
+    z-index: 3;
+    position: relative;
+    /* transform: translate(-18rem); */
+    transform: translate(18rem);
+    background-color: white;
+    transition: 1.2s;
+    opacity: 0;
+}
+
+.img-countainer {
+    background: linear-gradient(to left, rgba(182, 182, 182, 0.808), white);
+    z-index: 2;
+    position: relative;
+    height: 95%;
+    top: 1rem;
+    transform: translate(-48rem);
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.img-countainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll {
+    height: 8rem;
+    top: 10rem;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.scroll img {
+    width: 100%;
+    transform: translate(0, -50%);
+}
+
+.scroll-secend {
+    top: 8rem;
+}
+.works{
+    position: relative;
+    top: 12rem;
+    opacity: 0;
+    transition: 1s;
+    margin-bottom: 10rem;
+}
+
+.works-container{
+    width: 90%;
+    position: relative;
+    right: 4%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.each-work{
+    margin: 0.5rem;
+    background-color: rgb(230, 228, 228);
+    padding: 1.5rem;
+}
+
+.works-container img{
+    width: 100%;
+    height: 25rem;
+}
+
+.work-info{
+    margin-top: 2rem;
+    color: #000;
+    text-align: center;
+}
+
+.cards{
+    position: relative;
+    top: 12rem;
+    overflow: hidden;
+    padding-top: 3rem;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10rem;
+    width: 90%;
+    right: 5%;
+    position: relative;
+    margin-bottom: 5rem;
+    transform: translate(0,30rem);
+    opacity: 0;
+    transition: 1s;
+    
+}
+.each-card{
+    height: 30rem;
+    box-shadow: rgb(148, 147, 147) 0px 0px 8px 4px;
+    transition: 1s;
+   
+}
+
+.card-img h1{
+    font-size: 6rem !important;
+}
+
+.card-text{
+    text-align: center;
+    padding: 1rem;
+}
